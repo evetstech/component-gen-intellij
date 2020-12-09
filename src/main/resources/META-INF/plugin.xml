@@ -1,0 +1,24 @@
+<idea-plugin>
+    <id>org.tealium.component_generator</id>
+    <name>Component Generator</name>
+    <vendor email="steve.singrattana@tealium.com" url="http://www.tealium.com">Tealium</vendor>
+
+    <description><![CDATA[Generates folders and components based off default templates]]></description>
+
+    <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <action id="ComponentGenPlugin" class="ComponentGenPluginMain"
+                text="Plugin: Generate Component Files" description="Generates component from templates">
+            <override-text place="MainMenu" text="Generate Component Files"/>
+            <keyboard-shortcut first-keystroke="control alt g" keymap="$default"/>
+            <add-to-group group-id="ToolsMenu" anchor="first"/>
+        </action>
+    </actions>
+</idea-plugin>

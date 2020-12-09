@@ -1,0 +1,14 @@
+import React from "react";
+import PropTypes from "prop-types";
+
+const ${ComponentName} = () => {
+	return (
+		<h1> ${ComponentName} </h1>
+	);
+};
+
+${ComponentName}.propTypes = {
+
+};
+
+export default ${ComponentName};
